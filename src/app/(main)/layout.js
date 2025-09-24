@@ -5,8 +5,8 @@ import Header from "@/components/others/Header";
 
 export const metadata = {
   title: {
-    template: "%s | BD Store", // This is the title template
-    default: "My Awesome E-commerce Store", // This is the default title for pages without a specific title
+    template: "%s | Cute Bull Store", // This is the title template
+    default: "Cute Bull Store", // This is the default title for pages without a specific title
   },
   description: "Your one-stop shop for all your needs.",
 };

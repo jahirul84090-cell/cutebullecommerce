@@ -273,13 +273,20 @@ export default function Header() {
               </div>
 
               <Link href="/">
-                <span
-                  className={`uppercase font-bold text-gray-900 transition-all duration-300 ease-in-out ${
-                    isScrolled ? "text-xl" : "text-2xl"
-                  }`}
-                >
-                  Bd <span className="text-purple-600">Store</span>
-                </span>
+                <div className="flex items-center space-x-2">
+                  <img
+                    src="https://ik.imagekit.io/obnmhirhl/WhatsApp_Image_2025-09-22_at_4.27.29_PM_rGCzWNsCr.jpeg" // replace with your image path
+                    alt="Logo"
+                    className="w-8 h-8 object-contain"
+                  />
+                  <span
+                    className={`uppercase font-bold text-gray-900 transition-all duration-300 ease-in-out ${
+                      isScrolled ? "text-xl" : "text-2xl"
+                    }`}
+                  >
+                    Cute Bull <span className="text-orange-600">Store</span>
+                  </span>
+                </div>
               </Link>
             </div>
 
