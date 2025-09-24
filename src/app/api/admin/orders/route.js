@@ -244,13 +244,13 @@ export async function POST(request) {
     }
 
     let transactionNumber = incomingTransactionNumber;
-    if (paymentMethod.requiresTransactionNumber && !transactionNumber) {
+    if (!paymentMethod.isCashOnDelivery && !transactionNumber) {
       return NextResponse.json(
         { error: "Transaction number is required" },
         { status: 400 }
       );
     }
-    if (!paymentMethod.requiresTransactionNumber) {
+    if (paymentMethod.isCashOnDelivery) {
       transactionNumber = `COD_${Date.now()}_${Math.random()
         .toString(36)
         .substring(2, 8)
