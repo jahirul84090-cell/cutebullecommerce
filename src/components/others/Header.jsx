@@ -133,27 +133,6 @@ export default function Header() {
 
   return (
     <>
-      {/* Promo Bar */}
-      <div
-        className={`fixed w-full z-50 bg-purple-600 text-white text-center py-2 px-4 text-xs sm:text-sm flex items-center justify-center space-x-4 transition-transform duration-300 ease-in-out ${
-          promoBarVisible ? "top-0 absolute" : "hidden"
-        }`}
-      >
-        <span className="flex-1 text-right">
-          Get **40% OFF** your first order!
-        </span>
-        <Button
-          size="sm"
-          variant="outline"
-          className="text-purple-900 bg-white border-white hover:bg-purple-100 transition-colors"
-        >
-          Shop Now
-        </Button>
-        <span className="ml-auto hidden sm:block text-left text-gray-200 text-xs flex-1">
-          Limited time offer
-        </span>
-      </div>
-
       {/* Main Header */}
       <header
         className={`fixed w-full z-40 transition-all duration-300 ease-in-out ${
